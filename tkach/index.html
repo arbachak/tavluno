@@ -8,7 +8,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__container">
+      <div class="header__container container">
         <a class="header__logo" href="index.html" aria-label="Tavluno — главная">
           <img src="images/logo-icon.svg" alt="">
           <span>Tavluno</span>
@@ -50,9 +50,9 @@
       </div>
     </header>
     <main>
-      <section class="hero">
+      <section class="section hero">
         <img class="hero__background" src="images/hero-background.png" alt="">
-        <div class="hero__container">
+        <div class="hero__container container">
           <div class="hero__info">
             <h1 class="hero__title">Успевайте больше с Tavluno</h1>
             <p class="hero__description">
@@ -64,7 +64,91 @@
             </button>
           </div>
           <div class="hero__image">
-            <img src="images/hero.png" alt="Совместная работа над проектом" width="824" height="549">
+            <picture>
+              <source type="image/avif"
+                srcset="images/hero-picture/hero-320.avif 320w,
+                  images/hero-picture/hero-480.avif 480w,
+                  images/hero-picture/hero-768.avif 768w,
+                  images/hero-picture/hero-1024.avif 1024w,
+                  images/hero-picture/hero-1440.avif 1440w,
+                  images/hero-picture/hero-1800.avif 1800w"
+                sizes="824px">
+              <source type="image/webp"
+                srcset="images/hero-picture/hero-320.webp 320w,
+                  images/hero-picture/hero-480.webp 480w,
+                  images/hero-picture/hero-768.webp 768w,
+                  images/hero-picture/hero-1024.webp 1024w,
+                  images/hero-picture/hero-1440.webp 1440w,
+                  images/hero-picture/hero-1800.webp 1800w"
+                sizes="824px">
+              <img src="images/hero.png" alt="Совместная работа над проектом" width="824" height="549">
+            </picture>
+          </div>
+        </div>
+      </section>
+      <section class="section features">
+        <div class="features__container container">
+          <div class="media-block">
+            <div class="media-block__content">
+              <img class="media-block__img" src="images/media-block/vector.svg" alt="">
+              <h2 class="media-block__title">Управление проектами</h2>
+              <p class="media-block__description">
+                Добавляйте изображения, видео, PDF и аудио. Создавайте формулы и схемы
+                прямо в приложении. Делайте снимки на телефоне и сохраняйте их в заметках.
+              </p>
+              <button class="button-primary" type="button">
+                Начать<img class="button-primary__arrow" src="images/arrow-right.svg" alt="">
+              </button>
+            </div>
+            <div class="media-block__image">
+              <picture>
+                <source type="image/avif"
+                  srcset="images/features/project-picture/project-320.avif 320w,
+                    images/features/project-picture/project-480.avif 480w,
+                    images/features/project-picture/project-768.avif 768w,
+                    images/features/project-picture/project-1024.avif 1024w,
+                    images/features/project-picture/project-1440.avif 1440w,
+                    images/features/project-picture/project-1800.avif 1800w"
+                  sizes="(min-width: 1480px) 660px, calc((100vw - 160px) / 2)">
+                <source type="image/webp"
+                  srcset="images/features/project-picture/project-320.webp 320w,
+                    images/features/project-picture/project-480.webp 480w,
+                    images/features/project-picture/project-768.webp 768w,
+                    images/features/project-picture/project-1024.webp 1024w,
+                    images/features/project-picture/project-1440.webp 1440w,
+                    images/features/project-picture/project-1800.webp 1800w"
+                  sizes="(min-width: 1480px) 660px, calc((100vw - 160px) / 2)">
+                <img src="images/features/project.png" alt="Управление проектами" width="1800" height="1579">
+              </picture>
+            </div>
+          </div>
+          <div class="media-block media-block--reverse">
+            <div class="media-block__content">
+              <img class="media-block__img" src="images/media-block/vector.svg" alt="">
+              <h2 class="media-block__title">Работайте вместе</h2>
+              <p class="media-block__description">
+                В Tavluno делитесь заметками с коллегами и работайте над ними вместе.
+                Публикуйте заметки в интернете и отправляйте ссылки другим людям.
+              </p>
+              <button class="button-primary" type="button">
+                Попробовать<img class="button-primary__arrow" src="images/arrow-right.svg" alt="">
+              </button>
+            </div>
+            <div class="media-block__image">
+              <picture>
+                <source type="image/avif"
+                  srcset="images/features/work-together-picture/work-together-320.avif 320w,
+                    images/features/work-together-picture/work-together-480.avif 480w,
+                    images/features/work-together-picture/work-together-710.avif 710w"
+                  sizes="(min-width: 1480px) 660px, calc((100vw - 160px) / 2)">
+                <source type="image/webp"
+                  srcset="images/features/work-together-picture/work-together-320.webp 320w,
+                    images/features/work-together-picture/work-together-480.webp 480w,
+                    images/features/work-together-picture/work-together-710.webp 710w"
+                  sizes="(min-width: 1480px) 660px, calc((100vw - 160px) / 2)">
+                <img src="images/features/work-together.png" alt="Работайте вместе" width="710" height="661">
+              </picture>
+            </div>
           </div>
         </div>
       </section>

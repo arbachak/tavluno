@@ -1,14 +1,12 @@
 .hero {
-  padding: 140px 0;
   background-color: #043873;
   color: #fff;
 }
 
 .hero__container {
+  position: relative;
   display: flex;
   align-items: center;
-  width: 1480px;
-  margin: 0 auto;
 }
 
 .hero__info {
@@ -38,5 +36,7 @@
 }
 
 .hero__background {
+  position: absolute;
   width: 100%;
+  height: 553px;
 }

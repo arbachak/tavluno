@@ -1,0 +1,9 @@
+.features {
+  color: #212529;
+}
+
+.features__container {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
