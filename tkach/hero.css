@@ -1,0 +1,42 @@
+.hero {
+  padding: 140px 0;
+  background-color: #043873;
+  color: #fff;
+}
+
+.hero__container {
+  display: flex;
+  align-items: center;
+  width: 1480px;
+  margin: 0 auto;
+}
+
+.hero__info {
+  width: 654px;
+}
+
+.hero__title {
+  margin: 0 0 26px;
+  font-size: 64px;
+  font-weight: 700;
+}
+
+.hero__description {
+  margin: 0 0 60px;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.hero__image {
+  flex-shrink: 0;
+  width: 824px;
+}
+
+.hero__image img {
+  display: block;
+  object-fit: contain;
+}
+
+.hero__background {
+  width: 100%;
+}
