@@ -17,3 +17,21 @@
 .button-primary__arrow {
   flex-shrink: 0;
 }
+
+.button-secondary {
+  border: 1px solid #ffe492;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #212529;
+  font-weight: 500;
+}
+
+.button-secondary:hover {
+  background-color: #ffe492;
+}
+
+.button-sm {
+  padding: 16px 40px;
+  font-size: 16px;
+  line-height: 19px;
+}

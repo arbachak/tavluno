@@ -90,8 +90,10 @@
         <div class="features__container container">
           <div class="media-block">
             <div class="media-block__content">
-              <img class="media-block__img" src="images/media-block/vector.svg" alt="">
-              <h2 class="media-block__title">Управление проектами</h2>
+              <div class="media-block__vector">
+                <img class="media-block__img" src="images/media-block/vector.svg" alt="">
+                <h2 class="media-block__title">Управление проектами</h2>
+              </div>
               <p class="media-block__description">
                 Добавляйте изображения, видео, PDF и аудио. Создавайте формулы и схемы
                 прямо в приложении. Делайте снимки на телефоне и сохраняйте их в заметках.
@@ -124,8 +126,10 @@
           </div>
           <div class="media-block media-block--reverse">
             <div class="media-block__content">
-              <img class="media-block__img" src="images/media-block/vector.svg" alt="">
-              <h2 class="media-block__title">Работайте вместе</h2>
+              <div class="media-block__vector">
+                <img class="media-block__img" src="images/media-block/vector.svg" alt="">
+                <h2 class="media-block__title">Работайте вместе</h2>
+              </div>
               <p class="media-block__description">
                 В Tavluno делитесь заметками с коллегами и работайте над ними вместе.
                 Публикуйте заметки в интернете и отправляйте ссылки другим людям.
@@ -148,6 +152,160 @@
                   sizes="(min-width: 1480px) 660px, calc((100vw - 160px) / 2)">
                 <img src="images/features/work-together.png" alt="Работайте вместе" width="710" height="661">
               </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section extensions">
+        <div class="container">
+          <div class="media-block">
+            <div class="media-block__content">
+              <div class="media-block__vector">
+                <img class="media-block__img" src="images/media-block/vector.svg" alt="">
+                <h2 class="media-block__title">Используйте расширение</h2>
+              </div>
+              <p class="media-block__description">
+                Сохраняйте веб-страницы и&nbsp;скриншоты в&nbsp;заметках с&nbsp;помощью расширения
+                Web Clipper для&nbsp;Chrome и&nbsp;Firefox.
+              </p>
+              <button class="button-primary" type="button">
+                Начать<img class="button-primary__arrow" src="images/arrow-right.svg" alt="">
+              </button>
+            </div>
+            <div class="media-block__image">
+              <picture>
+                <source type="image/avif"
+                  srcset="images/extensions/extensions-480.avif 480w,
+                    images/extensions/extensions-768.avif 768w,
+                    images/extensions/extensions-1440.avif 1440w"
+                  sizes="(min-width: 1480px) 660px, calc((100vw - 160px) / 2)">
+                <source type="image/webp"
+                  srcset="images/extensions/extensions-480.webp 480w,
+                    images/extensions/extensions-768.webp 768w,
+                    images/extensions/extensions-1440.webp 1440w"
+                  sizes="(min-width: 1480px) 660px, calc((100vw - 160px) / 2)">
+                <img src="images/extensions/extensions.png" alt="Интерфейс расширения Web Clipper на мониторе" width="1800" height="1104">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section customization">
+        <div class="container">
+          <div class="media-block media-block--reverse">
+            <div class="media-block__content">
+              <div class="media-block__vector">
+                <img class="media-block__img" src="images/media-block/vector.svg" alt="">
+                <h2 class="media-block__title">Настройте под себя</h2>
+              </div>
+              <p class="media-block__description">
+                Настройте приложение с&nbsp;помощью плагинов, тем и&nbsp;редакторов текста
+                с&nbsp;форматированием или Markdown. Создавайте свои скрипты и&nbsp;плагины
+                через API расширений.
+              </p>
+              <button class="button-primary" type="button">
+                Начать<img class="button-primary__arrow" src="images/arrow-right.svg" alt="">
+              </button>
+            </div>
+            <div class="media-block__image">
+              <picture>
+                <source type="image/avif"
+                  srcset="images/customization/customization-480.avif 480w,
+                    images/customization/customization-768.avif 768w,
+                    images/customization/customization-1440.avif 1440w"
+                  sizes="(min-width: 1480px) 660px, calc((100vw - 160px) / 2)">
+                <source type="image/webp"
+                  srcset="images/customization/customization-480.webp 480w,
+                    images/customization/customization-768.webp 768w,
+                    images/customization/customization-1440.webp 1440w"
+                  sizes="(min-width: 1480px) 660px, calc((100vw - 160px) / 2)">
+                <img src="images/customization/customization.png" alt="Иллюстрация настройки приложения" width="1800" height="1535">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section pricing">
+        <div class="container">
+          <div class="pricing__header">
+            <div class="pricing__vector">
+              <img class="pricing__img" src="images/pricing/vector.webp" alt="">
+              <h2 class="pricing__title">Выберите тариф</h2>
+            </div>
+            <p class="pricing__description">
+              Наведите порядок в&nbsp;делах, организуйте личную жизнь или повысьте
+              продуктивность на&nbsp;работе &mdash; в&nbsp;Evernote найдётся подходящий тариф.
+            </p>
+          </div>
+          <div class="pricing__cards">
+            <article class="pricing__card">
+              <div class="pricing__card-head">
+                <h3 class="pricing__card-title">Бесплатный</h3>
+                <p class="pricing__price">0&nbsp;₽</p>
+                <p class="pricing__summary">Записывайте идеи и&nbsp;быстро находите их</p>
+              </div>
+              <ul class="pricing__features">
+                <li>Синхронизация без лимита устройств</li>
+                <li>Загрузка до&nbsp;10&nbsp;ГБ в&nbsp;месяц</li>
+                <li>Размер заметки &mdash; до&nbsp;200&nbsp;МБ</li>
+                <li>Настройка главного экрана и&nbsp;дополнительные виджеты</li>
+                <li>Подключение основного аккаунта Google Календаря</li>
+                <li>Сроки, напоминания и&nbsp;уведомления для&nbsp;задач</li>
+              </ul>
+              <button class="button-secondary button-sm" type="button">Начать</button>
+            </article>
+            <article class="pricing__card pricing__card--featured">
+              <div class="pricing__card-head">
+                <h3 class="pricing__card-title">Личный</h3>
+                <p class="pricing__price">1&nbsp;020&nbsp;₽</p>
+                <p class="pricing__summary">Держите семейные дела под контролем</p>
+              </div>
+              <ul class="pricing__features">
+                <li>Синхронизация без лимита устройств</li>
+                <li>Загрузка до&nbsp;10&nbsp;ГБ в&nbsp;месяц</li>
+                <li>Размер заметки &mdash; до&nbsp;200&nbsp;МБ</li>
+                <li>Настройка главного экрана и&nbsp;дополнительные виджеты</li>
+                <li>Подключение основного аккаунта Google Календаря</li>
+                <li>Сроки, напоминания и&nbsp;уведомления для&nbsp;задач</li>
+              </ul>
+              <button class="button-primary button-sm" type="button">Начать</button>
+            </article>
+            <article class="pricing__card">
+              <div class="pricing__card-head">
+                <h3 class="pricing__card-title">Для компаний</h3>
+                <p class="pricing__price">4&nbsp;250&nbsp;₽</p>
+                <p class="pricing__summary">Записывайте идеи и&nbsp;быстро находите их</p>
+              </div>
+              <ul class="pricing__features">
+                <li>Синхронизация без лимита устройств</li>
+                <li>Загрузка до&nbsp;10&nbsp;ГБ в&nbsp;месяц</li>
+                <li>Размер заметки &mdash; до&nbsp;200&nbsp;МБ</li>
+                <li>Настройка главного экрана и&nbsp;дополнительные виджеты</li>
+                <li>Подключение основного аккаунта Google Календаря</li>
+                <li>Сроки, напоминания и&nbsp;уведомления для&nbsp;задач</li>
+              </ul>
+              <button class="button-secondary button-sm" type="button">Начать</button>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="section work-anywhere">
+        <img class="work-anywhere__background" src="images/work-anywhere/background.png" alt="" width="470" height="837">
+        <div class="container">
+          <div class="work-anywhere__container">
+            <div class="work-anywhere__heading">
+              <h2 class="work-anywhere__title">Работайте где угодно</h2>
+              <img class="work-anywhere__vector" src="images/work-anywhere/vector.svg" alt="" width="315" height="24">
+            </div>
+            <p class="work-anywhere__text">
+              Открывайте заметки на&nbsp;компьютере, телефоне и&nbsp;планшете: синхронизируйте
+              их через Tavluno, Dropbox, OneDrive и&nbsp;другие сервисы. Приложение доступно
+              для&nbsp;Windows, macOS, Linux, Android и&nbsp;iOS. Есть и&nbsp;версия для&nbsp;терминала!
+            </p>
+            <div class="work-anywhere__action">
+              <button class="button-primary" type="button">
+                Попробуйте Taskey<img class="button-primary__arrow" src="images/arrow-right.svg" alt="">
+              </button>
             </div>
           </div>
         </div>

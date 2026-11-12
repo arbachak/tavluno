@@ -1,0 +1,132 @@
+.pricing {
+  color: #212529;
+}
+
+.pricing__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pricing__vector {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.pricing__img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 320px;
+  max-width: 100%;
+  height: auto;
+}
+
+.pricing__title {
+  position: relative;
+  margin: 0;
+  font-size: 72px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.pricing__description {
+  max-width: 1000px;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: center;
+}
+
+.pricing__cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px 32px;
+  margin-top: 100px;
+}
+
+.pricing__card {
+  display: grid;
+  grid-row: span 8;
+  grid-template-rows: subgrid;
+  justify-items: start;
+  padding: 40px 44px;
+  border: 1px solid #ffe492;
+  border-radius: 10px;
+}
+
+.pricing__card--featured {
+  margin-block: -40px;
+  padding-block: 80px;
+  border-color: #043873;
+  background-color: #043873;
+  color: #fff;
+}
+
+.pricing__card-head {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.pricing__card-title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+}
+
+.pricing__price {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: -0.72px;
+}
+
+.pricing__card--featured .pricing__price {
+  color: #ffe492;
+}
+
+.pricing__summary {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 23px;
+  letter-spacing: -0.36px;
+}
+
+.pricing__features {
+  display: grid;
+  grid-row: span 6;
+  grid-template-rows: subgrid;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.pricing__features li {
+  display: flex;
+  align-items: flex-start;
+  gap: 19px;
+}
+
+.pricing__features li::before {
+  content: "";
+  flex: 0 0 20px;
+  height: 20px;
+  background-color: #212529;
+  mask: url("images/pricing/check.svg") center / contain no-repeat;
+}
+
+.pricing__card--featured .pricing__features {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 23px;
+}
+
+.pricing__card--featured .pricing__features li::before {
+  background-color: #ffe492;
+}

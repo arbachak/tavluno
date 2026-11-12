@@ -1,0 +1,50 @@
+.work-anywhere {
+  position: relative;
+  overflow: hidden;
+  background-color: #043873;
+  color: #fff;
+}
+
+.work-anywhere__background {
+  position: absolute;
+  top: -190px;
+  left: 0;
+  max-width: 100%;
+  height: auto;
+}
+
+.work-anywhere__container {
+  position: relative;
+  max-width: 1064px;
+  margin: 0 auto;
+}
+
+.work-anywhere__heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.work-anywhere__title {
+  margin: 0;
+  font-size: 72px;
+  font-weight: 700;
+}
+
+.work-anywhere__vector {
+  flex-shrink: 0;
+  margin-top: 42px;
+}
+
+.work-anywhere__text {
+  margin: 0 0 60px;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.work-anywhere__action {
+  display: flex;
+  justify-content: center;
+}
