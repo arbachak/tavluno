@@ -1,0 +1,146 @@
+.anywhere {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding-block: 140px;
+  background: var(--color-navy);
+  color: var(--color-white);
+  text-align: center;
+}
+
+.anywhere::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  left: 0;
+  top: 0;
+  width: 681px;
+  height: 691px;
+  opacity: 0.2;
+  background: url("../../assets/images/project-decoration.svg") top left /
+    contain no-repeat;
+  transform: rotate(-105deg);
+  transform-origin: center;
+  pointer-events: none;
+}
+
+.anywhere > .container {
+  position: relative;
+  z-index: 1;
+}
+
+.anywhere__content {
+  max-width: 1064px;
+  margin-inline: auto;
+}
+
+.anywhere .heading {
+  font-size: 72px;
+  line-height: 84px;
+  text-align: center;
+}
+
+.anywhere .description {
+  margin-top: 24px;
+  text-align: center;
+}
+
+.anywhere .button {
+  margin-top: 60px;
+  min-height: 63px;
+  padding: 20px 40px;
+  min-width: 260px;
+}
+
+@media (max-width: 1440px) {
+  .anywhere {
+    padding-block: 100px;
+  }
+  .anywhere::before {
+    width: 450px;
+    height: 450px;
+    top: -40px;
+    left: -80px;
+  }
+  .anywhere .heading {
+    font-size: 72px;
+    line-height: 84px;
+  }
+}
+
+@media (max-width: 1152px) {
+  .anywhere::before {
+    display: none;
+  }
+  .anywhere__content {
+    max-width: 650px;
+    margin-inline: 0;
+    text-align: left;
+  }
+  .anywhere .heading {
+    font-size: 64px;
+    line-height: 75px;
+    text-align: center;
+  }
+  .anywhere .description {
+    text-align: center;
+  }
+  .anywhere .button {
+    min-height: 63px;
+    padding: 20px 40px;
+    min-width: 260px;
+  }
+}
+
+@media (max-width: 768px) {
+  .anywhere::before {
+    display: block;
+    width: 350px;
+    height: 350px;
+    top: -40px;
+    left: -120px;
+    opacity: 0.15;
+  }
+  .anywhere__content {
+    max-width: 604px;
+    margin-inline: 0;
+  }
+  .anywhere .heading {
+    font-size: 54px;
+    line-height: 63px;
+    text-align: left;
+  }
+  .anywhere .description {
+    text-align: left;
+  }
+  .anywhere .button {
+    min-height: 59px;
+    padding: 20px 40px;
+    min-width: 243px;
+  }
+}
+
+@media (max-width: 599px) {
+  .anywhere::before {
+    display: none;
+  }
+  .anywhere {
+    padding: 100px 0 140px;
+  }
+  .anywhere__content {
+    max-width: 100%;
+  }
+  .anywhere .heading {
+    font-size: 36px;
+    line-height: 42px;
+    text-align: left;
+  }
+  .anywhere .description {
+    text-align: left;
+  }
+  .anywhere .button {
+    min-height: 70px;
+    padding: 20px 40px;
+    min-width: 100%;
+  }
+}

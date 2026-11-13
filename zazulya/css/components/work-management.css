@@ -1,0 +1,31 @@
+.work-management {
+  position: relative;
+  overflow: hidden;
+  padding-block: var(--section-space);
+}
+
+.work-management::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  top: 250px;
+  left: -160px;
+  width: 603px;
+  height: 449px;
+  background: url("../../assets/images/project-decoration.svg") center / contain
+    no-repeat;
+  pointer-events: none;
+}
+
+.work-management > .container {
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .work-management::before {
+    top: 45px;
+    left: -300px;
+    opacity: 0.6;
+  }
+}

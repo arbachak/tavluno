@@ -1,0 +1,40 @@
+.highlight {
+  position: relative;
+  isolation: isolate;
+  display: inline-block;
+}
+
+.highlight::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: -4%;
+  right: -4%;
+  bottom: -0.06em;
+  height: 0.28em;
+  background: url("../../assets/images/1-underline.svg") center / 100% 100%
+    no-repeat;
+  pointer-events: none;
+}
+
+.highlight--blue::after {
+  background-image: url("../../assets/images/anywhere-underline-blue.svg");
+}
+
+@media (max-width: 768px) {
+  .highlight::after {
+    left: -4%;
+    right: -4%;
+    bottom: -0.05em;
+    height: 0.3em;
+  }
+}
+
+@media (max-width: 599px) {
+  .highlight::after {
+    left: -3%;
+    right: -3%;
+    bottom: -0.04em;
+    height: 0.32em;
+  }
+}
