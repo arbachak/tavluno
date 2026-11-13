@@ -1,0 +1,49 @@
+:root {
+  --color-navy: #043873;
+  --color-blue: #4f9cf9;
+  --color-yellow: #ffe492;
+  --color-ink: #212529;
+  --color-white: #ffffff;
+  --color-cream: #f7f7ee;
+  --color-line: #2e4e73;
+  --color-error: #b42318;
+
+  --font-main: "Roboto", Arial, sans-serif;
+
+  --container-width: 1480px;
+  --gutter: 220px;
+
+  --section-space: 140px;
+  --section-space-md: 100px;
+  --section-space-sm: 80px;
+
+  --radius: 8px;
+  --radius-card: 10px;
+}
+
+@media (max-width: 1440px) {
+  :root {
+    --gutter: 32px;
+    --section-space: 140px;
+  }
+}
+
+@media (max-width: 1152px) {
+  :root {
+    --gutter: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --gutter: 20px;
+    --section-space: 100px;
+  }
+}
+
+@media (max-width: 599px) {
+  :root {
+    --gutter: 16px;
+    --section-space: 80px;
+  }
+}

@@ -1,0 +1,31 @@
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  margin-right: auto;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 33px;
+  letter-spacing: 0;
+  color: var(--color-white);
+}
+
+.logo__icon {
+  width: 37px;
+  height: 29px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 599px) {
+  .logo {
+    gap: 7px;
+    font-size: 20px;
+    line-height: 23px;
+  }
+
+  .logo__icon {
+    width: 26px;
+    height: 20px;
+  }
+}

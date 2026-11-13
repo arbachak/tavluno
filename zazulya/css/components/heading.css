@@ -1,0 +1,33 @@
+.heading {
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 84px;
+  letter-spacing: -0.02em;
+}
+
+.section-intro {
+  max-width: 1064px;
+  margin-inline: auto;
+  text-align: center;
+}
+
+@media (max-width: 1152px) {
+  .heading {
+    font-size: 64px;
+    line-height: 75px;
+  }
+}
+
+@media (max-width: 768px) {
+  .heading {
+    font-size: 54px;
+    line-height: 63px;
+  }
+}
+
+@media (max-width: 599px) {
+  .heading {
+    font-size: 36px;
+    line-height: 42px;
+  }
+}

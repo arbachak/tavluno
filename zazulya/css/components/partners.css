@@ -1,0 +1,94 @@
+.partners {
+  padding-block: var(--section-space);
+  background: var(--color-white);
+  text-align: center;
+}
+
+.partners__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  margin-top: 100px;
+}
+
+.partners__logo {
+  display: block;
+  height: auto;
+  max-height: 71px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.partners__logo--apple {
+  width: 55px;
+  height: 68px;
+}
+
+.partners__logo--microsoft {
+  width: 287px;
+  height: 62px;
+}
+
+.partners__logo--slack {
+  width: 280px;
+  height: 71px;
+}
+
+.partners__logo--google {
+  width: 211px;
+  height: 69px;
+}
+
+@media (max-width: 1440px) {
+  .partners__list {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 1152px) {
+  .partners__list {
+    gap: 32px;
+  }
+  .partners__logo--microsoft {
+    width: 240px;
+    height: auto;
+  }
+  .partners__logo--slack {
+    width: 230px;
+    height: auto;
+  }
+  .partners__logo--google {
+    width: 180px;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .partners {
+    padding-block: 100px;
+  }
+  .partners__list {
+    flex-direction: column;
+    gap: 100px;
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 599px) {
+  .partners {
+    padding-block: 80px;
+  }
+  .partners__list {
+    gap: 60px;
+  }
+  .partners__logo--microsoft {
+    width: 213px;
+  }
+  .partners__logo--slack {
+    width: 192px;
+  }
+  .partners__logo--google {
+    width: 140px;
+  }
+}

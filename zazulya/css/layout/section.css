@@ -1,0 +1,12 @@
+.section {
+  padding-block: var(--section-space);
+}
+
+.section--dark {
+  background: var(--color-navy);
+  color: var(--color-white);
+}
+
+.section--tight {
+  padding-block: 0;
+}

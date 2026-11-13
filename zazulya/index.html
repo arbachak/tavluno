@@ -1,0 +1,770 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Tavluno — сервис для управления проектами. Работайте в команде, стройте планы и держите задачи под контролем."
+    />
+    <meta name="theme-color" content="#043873" />
+    <title>Tavluno — успевайте больше</title>
+    <link rel="icon" href="assets/images/logo-icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body id="top">
+    <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+    <!-- HEADER -->
+    <header class="header">
+      <div class="container header__inner">
+        <a class="logo" href="#top" aria-label="Tavluno — на главную">
+          <img
+            class="logo__icon"
+            src="assets/images/logo-icon.svg"
+            alt=""
+            width="37"
+            height="29"
+          />
+          <span>Tavluno</span>
+        </a>
+
+        <!-- Десктоп: навигация + кнопки -->
+        <div class="header__desktop">
+          <nav class="navigation" aria-label="Основная навигация">
+            <details class="navigation__item">
+              <summary>Продукты</summary>
+              <div class="navigation__dropdown">
+                <a href="#projects">Управление проектами</a>
+                <a href="#extension">Расширение для браузера</a>
+                <a href="#customize">Настройка приложения</a>
+              </div>
+            </details>
+
+            <details class="navigation__item">
+              <summary>Решения</summary>
+              <div class="navigation__dropdown">
+                <a href="#teamwork">Совместная работа</a>
+                <a href="#anywhere">Работа на любом устройстве</a>
+                <a href="#data">Защита данных</a>
+              </div>
+            </details>
+
+            <details class="navigation__item">
+              <summary>Ресурсы</summary>
+              <div class="navigation__dropdown">
+                <a href="#integrations">Интеграции</a>
+                <a href="#reviews">Отзывы клиентов</a>
+                <a href="#partners">Наши партнёры</a>
+              </div>
+            </details>
+
+            <details class="navigation__item">
+              <summary>Тарифы</summary>
+              <div class="navigation__dropdown">
+                <a href="#plan-1">Бесплатный</a>
+                <a href="#plan-2">Личный</a>
+                <a href="#plan-3">Для компаний</a>
+              </div>
+            </details>
+          </nav>
+
+          <div class="header__actions">
+            <a class="button button--yellow" href="#signup">Войти</a>
+            <a class="button" href="#signup">
+              Tavluno бесплатно
+              <span class="button__arrow" aria-hidden="true"></span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Мобильное меню без JS: <details> -->
+        <details class="header__mobile">
+          <summary class="header__burger" aria-label="Меню">
+            <span></span><span></span><span></span>
+          </summary>
+          <div class="header__mobile-panel">
+            <nav class="navigation" aria-label="Мобильная навигация">
+              <details class="navigation__item">
+                <summary>Продукты</summary>
+                <div class="navigation__dropdown">
+                  <a href="#projects">Управление проектами</a>
+                  <a href="#extension">Расширение для браузера</a>
+                  <a href="#customize">Настройка приложения</a>
+                </div>
+              </details>
+
+              <details class="navigation__item">
+                <summary>Решения</summary>
+                <div class="navigation__dropdown">
+                  <a href="#teamwork">Совместная работа</a>
+                  <a href="#anywhere">Работа на любом устройстве</a>
+                  <a href="#data">Защита данных</a>
+                </div>
+              </details>
+
+              <details class="navigation__item">
+                <summary>Ресурсы</summary>
+                <div class="navigation__dropdown">
+                  <a href="#integrations">Интеграции</a>
+                  <a href="#reviews">Отзывы клиентов</a>
+                  <a href="#partners">Наши партнёры</a>
+                </div>
+              </details>
+
+              <details class="navigation__item">
+                <summary>Тарифы</summary>
+                <div class="navigation__dropdown">
+                  <a href="#plan-1">Бесплатный</a>
+                  <a href="#plan-2">Личный</a>
+                  <a href="#plan-3">Для компаний</a>
+                </div>
+              </details>
+            </nav>
+
+            <div class="header__actions">
+              <a class="button button--yellow" href="#signup">Войти</a>
+              <a class="button" href="#signup">
+                Tavluno бесплатно
+                <span class="button__arrow" aria-hidden="true"></span>
+              </a>
+            </div>
+          </div>
+        </details>
+      </div>
+    </header>
+    <!-- /HEADER -->
+
+    <main id="main">
+      <!-- HERO  -->
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="container hero__inner">
+          <div class="hero__copy">
+            <h1 class="hero__title" id="hero-title">
+              Успевайте больше с Tavluno
+            </h1>
+            <p class="hero__description">
+              Сервис для управления проектами: работайте в команде, стройте
+              планы, анализируйте результаты и решайте повседневные задачи
+            </p>
+            <a class="button" href="#signup">
+              Tavluno бесплатно
+              <span class="button__arrow" aria-hidden="true"></span>
+            </a>
+          </div>
+          <img
+            class="hero__image"
+            src="assets/images/hero.png"
+            alt="Команда работает над проектом за общим столом"
+            width="824"
+            height="549"
+            fetchpriority="high"
+          />
+        </div>
+      </section>
+      <!-- /HERO -->
+
+      <!-- WORK-MANAGEMENT -->
+      <section class="work-management">
+        <div class="container">
+          <!-- PROJECTS -->
+          <section
+            class="feature feature--projects"
+            id="projects"
+            aria-labelledby="projects-title"
+          >
+            <div class="feature__inner">
+              <div class="feature__copy">
+                <h2 class="heading" id="projects-title">
+                  Управление <span class="highlight">проектами</span>
+                </h2>
+                <p class="description">
+                  Добавляйте изображения, видео, PDF и аудио. Создавайте формулы
+                  и схемы прямо в приложении. Делайте снимки на телефоне и
+                  сохраняйте их в заметках.
+                </p>
+                <a class="button" href="#signup">
+                  Начать
+                  <span class="button__arrow" aria-hidden="true"></span>
+                </a>
+              </div>
+              <img
+                class="feature__image"
+                src="assets/images/project.png"
+                alt="Работа с заметками и материалами проекта"
+                width="748"
+                height="547"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+          </section>
+          <!-- /PROJECTS -->
+
+          <!-- TEAMWORK -->
+          <section
+            class="feature feature--teamwork"
+            id="teamwork"
+            aria-labelledby="teamwork-title"
+          >
+            <div class="feature__inner">
+              <img
+                class="feature__image"
+                src="assets/images/teamwork.svg"
+                alt="Участники команды объединены вокруг Tavluno"
+                loading="lazy"
+                decoding="async"
+              />
+              <div class="feature__copy">
+                <h2 class="heading" id="teamwork-title">
+                  Работайте <span class="highlight">вместе</span>
+                </h2>
+                <p class="description">
+                  В Tavluno делитесь заметками с коллегами и работайте над ними
+                  вместе. Публикуйте заметки в интернете и отправляйте ссылки
+                  другим людям.
+                </p>
+                <a class="button" href="#signup">
+                  Попробовать
+                  <span class="button__arrow" aria-hidden="true"></span>
+                </a>
+              </div>
+            </div>
+          </section>
+          <!-- /TEAMWORK -->
+        </div>
+      </section>
+      <!-- /WORK-MANAGEMENT -->
+
+      <!-- EXTENSION -->
+      <section
+        class="feature feature--dark feature--extension"
+        id="extension"
+        aria-labelledby="extension-title"
+      >
+        <div class="container feature__inner">
+          <div class="feature__copy">
+            <h2 class="heading" id="extension-title">
+              Используйте <span class="highlight">расширение</span>
+            </h2>
+            <p class="description">
+              Сохраняйте веб-страницы и скриншоты в заметках с помощью
+              расширения Web Clipper для Chrome и Firefox.
+            </p>
+            <a class="button" href="#signup">
+              Начать
+              <span class="button__arrow" aria-hidden="true"></span>
+            </a>
+          </div>
+          <img
+            class="feature__image"
+            src="assets/images/extension.png"
+            alt="Расширение для сохранения материалов из браузера"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+      </section>
+      <!-- /EXTENSION -->
+
+      <!-- CUSTOMIZE -->
+      <section
+        class="feature feature--customize"
+        id="customize"
+        aria-labelledby="customize-title"
+      >
+        <div class="container feature__inner">
+          <div class="feature__copy">
+            <h2 class="heading" id="customize-title">
+              Настройте под&nbsp;<span class="highlight">себя</span>
+            </h2>
+            <p class="description">
+              Настройте приложение с помощью плагинов, тем и редакторов текста с
+              форматированием или Markdown. Создавайте свои скрипты и плагины
+              через API расширений.
+            </p>
+            <a class="button" href="#signup">
+              Начать
+              <span class="button__arrow" aria-hidden="true"></span>
+            </a>
+          </div>
+          <img
+            class="feature__image"
+            src="assets/images/customize.png"
+            alt="Настройка рабочего пространства Tavluno"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+      </section>
+      <!-- /CUSTOMIZE -->
+
+      <!-- PRICING -->
+      <section class="pricing" id="pricing" aria-labelledby="pricing-title">
+        <div class="container">
+          <div class="section-intro">
+            <h2 class="heading" id="pricing-title">
+              Выберите <span class="highlight">тариф</span>
+            </h2>
+            <p class="description">
+              Наведите порядок в делах, организуйте личную жизнь или повысьте
+              продуктивность на работе — в Tavluno найдётся подходящий тариф.
+            </p>
+          </div>
+
+          <div class="pricing__track">
+            <article
+              class="price-card"
+              id="plan-1"
+              aria-labelledby="plan-1-name"
+            >
+              <h3 class="price-card__name" id="plan-1-name">Бесплатный</h3>
+              <p class="price-card__price">0 ₽</p>
+              <p class="price-card__description">
+                Записывайте идеи и быстро находите их
+              </p>
+              <ul class="price-card__features">
+                <li>Синхронизация без лимита устройств</li>
+                <li>Загрузка до 10 ГБ в месяц</li>
+                <li>Размер заметки — до 200 МБ</li>
+                <li>Настройка главного экрана и дополнительные виджеты</li>
+                <li>Подключение основного аккаунта Google Календаря</li>
+                <li>Сроки, напоминания и уведомления для задач</li>
+              </ul>
+              <a class="button button--outline" href="#signup">Начать</a>
+            </article>
+
+            <article
+              class="price-card price-card--featured"
+              id="plan-2"
+              aria-labelledby="plan-2-name"
+            >
+              <h3 class="price-card__name" id="plan-2-name">Личный</h3>
+              <p class="price-card__price">1 020 ₽</p>
+              <p class="price-card__description">
+                Держите семейные дела под контролем
+              </p>
+              <ul class="price-card__features">
+                <li>Синхронизация без лимита устройств</li>
+                <li>Загрузка до 10 ГБ в месяц</li>
+                <li>Размер заметки — до 200 МБ</li>
+                <li>Настройка главного экрана и дополнительные виджеты</li>
+                <li>Подключение основного аккаунта Google Календаря</li>
+                <li>Сроки, напоминания и уведомления для задач</li>
+              </ul>
+              <a class="button" href="#signup">Начать</a>
+            </article>
+
+            <article
+              class="price-card"
+              id="plan-3"
+              aria-labelledby="plan-3-name"
+            >
+              <h3 class="price-card__name" id="plan-3-name">Для компаний</h3>
+              <p class="price-card__price">4 250 ₽</p>
+              <p class="price-card__description">
+                Записывайте идеи и быстро находите их
+              </p>
+              <ul class="price-card__features">
+                <li>Синхронизация без лимита устройств</li>
+                <li>Загрузка до 10 ГБ в месяц</li>
+                <li>Размер заметки — до 200 МБ</li>
+                <li>Настройка главного экрана и дополнительные виджеты</li>
+                <li>Подключение основного аккаунта Google Календаря</li>
+                <li>Сроки, напоминания и уведомления для задач</li>
+              </ul>
+              <a class="button button--outline" href="#signup">Начать</a>
+            </article>
+          </div>
+
+          <div class="slider-controls" aria-hidden="true">
+            <span class="slider-controls__dot"></span>
+            <span class="slider-controls__dot" data-active="true"></span>
+            <span class="slider-controls__dot"></span>
+          </div>
+        </div>
+      </section>
+      <!-- /PRICING -->
+
+      <!-- ANYWHERE -->
+      <section class="anywhere" id="anywhere" aria-labelledby="anywhere-title">
+        <div class="container">
+          <div class="anywhere__content">
+            <h2 class="heading" id="anywhere-title">
+              Работайте
+              <span class="highlight highlight--blue">где угодно</span>
+            </h2>
+            <p class="description">
+              Открывайте заметки на компьютере, телефоне и планшете:
+              синхронизируйте их через Tavluno, Dropbox, OneDrive и другие
+              сервисы. Приложение доступно для Windows, macOS, Linux, Android и
+              iOS. Есть и версия для терминала!
+            </p>
+            <a class="button" href="#signup">
+              Попробуйте Tavluno
+              <span class="button__arrow" aria-hidden="true"></span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- /ANYWHERE -->
+
+      <!-- DATA -->
+      <section
+        class="feature feature--data"
+        id="data"
+        aria-labelledby="data-title"
+      >
+        <div class="container feature__inner">
+          <div class="feature__copy">
+            <h2 class="heading" id="data-title">
+              Все данные — <span class="highlight">ваши</span>
+            </h2>
+            <p class="description">
+              Открытый исходный код и открытый формат заметок обеспечивают
+              постоянный доступ к вашим данным. Сквозное шифрование (E2EE)
+              защищает заметки: прочитать их можете только вы.
+            </p>
+            <a class="button" href="#signup">
+              Подробнее
+              <span class="button__arrow" aria-hidden="true"></span>
+            </a>
+          </div>
+          <img
+            class="feature__image"
+            src="assets/images/data-security.svg"
+            alt="Схема защищённого хранения и синхронизации данных"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+      </section>
+      <!-- /DATA -->
+
+      <!-- PARTNERS -->
+      <section class="partners" id="partners" aria-labelledby="partners-title">
+        <div class="container">
+          <h2 class="heading" id="partners-title">
+            Наши <span class="highlight">партнёры</span>
+          </h2>
+          <ul class="partners__list">
+            <li>
+              <img
+                class="partners__logo partners__logo--apple"
+                src="assets/images/apple.svg"
+                alt="Apple"
+                loading="lazy"
+                decoding="async"
+              />
+            </li>
+            <li>
+              <img
+                class="partners__logo partners__logo--microsoft"
+                src="assets/images/microsoft.svg"
+                alt="Microsoft"
+                loading="lazy"
+                decoding="async"
+              />
+            </li>
+            <li>
+              <img
+                class="partners__logo partners__logo--slack"
+                src="assets/images/slack.svg"
+                alt="Slack"
+                loading="lazy"
+                decoding="async"
+              />
+            </li>
+            <li>
+              <img
+                class="partners__logo partners__logo--google"
+                src="assets/images/google.svg"
+                alt="Google"
+                loading="lazy"
+                decoding="async"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- /PARTNERS -->
+
+      <!-- INTEGRATIONS -->
+      <section
+        class="feature feature--dark feature--integrations"
+        id="integrations"
+        aria-labelledby="integrations-title"
+      >
+        <div class="container feature__inner">
+          <div class="feature__copy">
+            <h2 class="heading" id="integrations-title">
+              Ваши любимые приложения вместе с Tavluno
+            </h2>
+            <p class="description">
+              Tavluno работает с вашими любимыми сервисами. Подключите более
+              1000 приложений через Zapier и соберите все инструменты для
+              успешной работы над проектом.
+            </p>
+            <a class="button" href="#signup">
+              Подробнее
+              <span class="button__arrow" aria-hidden="true"></span>
+            </a>
+          </div>
+          <img
+            class="feature__image"
+            src="assets/images/integrations.svg"
+            alt="Интеграции с Gmail, Slack, Google Drive, календарём, Outlook и Dropbox"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+      </section>
+      <!-- /INTEGRATIONS -->
+
+      <!-- TESTIMONIALS -->
+      <section
+        class="testimonials"
+        id="reviews"
+        aria-labelledby="reviews-title"
+      >
+        <div class="container">
+          <h2 class="heading" id="reviews-title">
+            Отзывы <span class="highlight">клиентов</span>
+          </h2>
+
+          <div class="testimonials__track">
+            <article class="review review--light" aria-label="Отзыв 1">
+              <div class="review__quote" aria-hidden="true"></div>
+              <blockquote class="review__text">
+                Tavluno — сервис для совместной работы в компании со всеми
+                инструментами для управления проектами.
+              </blockquote>
+              <div class="review__author">
+                <img
+                  class="review__avatar"
+                  src="assets/images/avatar-1.png"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                />
+                <div>
+                  <h3 class="review__name">Оберон Шоу, MCH</h3>
+                  <p class="review__role">
+                    Руководитель подбора персонала в Северной Америке
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="review" aria-label="Отзыв 2">
+              <div class="review__quote" aria-hidden="true"></div>
+              <blockquote class="review__text">
+                Tavluno — сервис для совместной работы в компании со всеми
+                инструментами для управления проектами.
+              </blockquote>
+              <div class="review__author">
+                <img
+                  class="review__avatar"
+                  src="assets/images/avatar-2.png"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                />
+                <div>
+                  <h3 class="review__name">Оберон Шоу, MCH</h3>
+                  <p class="review__role">
+                    Руководитель подбора персонала в Северной Америке
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="review" aria-label="Отзыв 3">
+              <div class="review__quote" aria-hidden="true"></div>
+              <blockquote class="review__text">
+                Tavluno — сервис для совместной работы в компании.
+              </blockquote>
+              <div class="review__author">
+                <img
+                  class="review__avatar"
+                  src="assets/images/avatar-3.png"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                />
+                <div>
+                  <h3 class="review__name">Оберон Шоу, MCH</h3>
+                  <p class="review__role">
+                    Руководитель подбора персонала в Северной Америке
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="slider-controls" aria-hidden="true">
+            <span class="slider-controls__dot"></span>
+            <span class="slider-controls__dot" data-active="true"></span>
+            <span class="slider-controls__dot"></span>
+          </div>
+        </div>
+      </section>
+      <!-- /TESTIMONIALS -->
+
+      <!-- TRIAL -->
+      <section class="trial" id="start" aria-labelledby="trial-title">
+        <div class="container">
+          <div class="trial__content">
+            <h2 class="trial__title" id="trial-title">
+              Попробуйте Tavluno сегодня
+            </h2>
+            <p class="trial__description">
+              Начните бесплатно.<br />
+              Подключайте команду по мере роста задач.
+            </p>
+            <a class="button" href="#signup">
+              Tavluno бесплатно
+              <span class="button__arrow" aria-hidden="true"></span>
+            </a>
+            <a class="trial__contact" href="#signup">
+              Большая команда? Свяжитесь с отделом продаж
+            </a>
+            <ul class="trial__platforms">
+              <li>
+                <img
+                  src="assets/images/platform-apple.svg"
+                  alt="macOS"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </li>
+              <li>
+                <img
+                  src="assets/images/platform-windows.svg"
+                  alt="Windows"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </li>
+              <li>
+                <img
+                  src="assets/images/platform-android.svg"
+                  alt="Android"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- /TRIAL -->
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__grid">
+          <div class="footer__about">
+            <a class="logo" href="#top" aria-label="Tavluno — на главную">
+              <img
+                class="logo__icon"
+                src="assets/images/logo-icon.svg"
+                alt=""
+                width="37"
+                height="29"
+              />
+              <span>Tavluno</span>
+            </a>
+            <p>
+              Tavluno создан для нового образа жизни и работы. Мы делаем рабочую
+              среду удобнее для людей по всему миру.
+            </p>
+          </div>
+
+          <div class="footer__column">
+            <h2>Продукт</h2>
+            <a href="#projects" aria-current="page">Обзор</a>
+            <a href="#pricing">Тарифы</a>
+            <a href="#reviews">Истории клиентов</a>
+          </div>
+
+          <div class="footer__column">
+            <h2>Ресурсы</h2>
+            <a href="#signup">Блог</a>
+            <a href="#signup">Руководства и уроки</a>
+            <a href="#signup">Центр поддержки</a>
+          </div>
+
+          <div class="footer__column">
+            <h2>Компания</h2>
+            <a href="#signup">О нас</a>
+            <a href="#signup">Карьера</a>
+            <a href="#signup">Материалы для СМИ</a>
+          </div>
+
+          <div class="footer__cta">
+            <h2>Попробуйте сегодня</h2>
+            <p>
+              Начните бесплатно.<br />
+              Подключайте команду по мере роста задач.
+            </p>
+            <a class="button" href="#signup">
+              Начать сегодня
+              <span class="button__arrow" aria-hidden="true"></span>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <span class="footer__language">
+            <img
+              src="assets/images/icon-language.svg"
+              alt=""
+              width="19"
+              height="19"
+            />
+            Русский
+            <img
+              src="assets/images/arrow-white-language-footer.svg"
+              alt=""
+              width="12"
+              height="6"
+            />
+          </span>
+          <a href="#signup">Условия и конфиденциальность</a>
+          <a href="#data">Безопасность</a>
+          <a href="#signup">Статус</a>
+          <span class="footer__copyright">©2021 Tavluno LLC.</span>
+          <div class="footer__socials" aria-label="Социальные сети">
+            <a href="#signup" aria-label="Facebook">
+              <img
+                src="assets/images/footer-facebook.svg"
+                alt=""
+                width="24"
+                height="24"
+              />
+            </a>
+            <a href="#signup" aria-label="Twitter">
+              <img
+                src="assets/images/footer-twitter.svg"
+                alt=""
+                width="24"
+                height="24"
+              />
+            </a>
+            <a href="#signup" aria-label="LinkedIn">
+              <img
+                src="assets/images/footer-linkedin.svg"
+                alt=""
+                width="24"
+                height="24"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- /FOOTER -->
+  </body>
+</html>

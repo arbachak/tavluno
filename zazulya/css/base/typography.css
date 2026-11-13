@@ -1,0 +1,18 @@
+body {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.description {
+  margin-top: 24px;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: -0.02em;
+}
+
+@media (max-width: 599px) {
+  body {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}

@@ -1,0 +1,145 @@
+.hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background: var(--color-navy);
+  color: var(--color-white);
+  padding-block: 140px;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 23% -19% 10% -19%;
+  opacity: 0.3;
+  background: url("../../assets/images/hero-lines.svg") center / 100% 100%
+    no-repeat;
+  pointer-events: none;
+}
+
+.hero__inner {
+  display: grid;
+  grid-template-columns: 656fr 824fr;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero__copy {
+  min-width: 0;
+}
+
+.hero__title {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 75px;
+  letter-spacing: -0.02em;
+}
+
+.hero__description {
+  margin-top: 24px;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: -0.02em;
+}
+
+.hero__copy .button {
+  margin-top: 60px;
+  min-height: 63px;
+  padding: 20px 20px;
+  min-width: 211px;
+}
+
+.hero__image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 824 / 549;
+  object-fit: contain;
+}
+
+@media (max-width: 1440px) {
+  .hero {
+    padding-block: 100px;
+  }
+
+  .hero__inner {
+    grid-template-columns: 691fr 685fr;
+  }
+
+  .hero__image {
+    aspect-ratio: 685 / 456;
+  }
+}
+
+@media (max-width: 1152px) {
+  .hero {
+    padding-block: 140px;
+  }
+
+  .hero__inner {
+    grid-template-columns: 562fr 526fr;
+    gap: 32px;
+  }
+
+  .hero__image {
+    aspect-ratio: 526 / 350;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 140px 0 100px;
+    text-align: center;
+  }
+
+  .hero::before {
+    background-image: url("../../assets/images/hero-lines-mobile.svg");
+    inset: 0 -30% auto -30%;
+    height: 100%;
+  }
+
+  .hero__inner {
+    grid-template-columns: 1fr;
+    gap: 100px;
+  }
+
+  .hero__title {
+    font-size: 54px;
+    line-height: 63px;
+  }
+
+  .hero__image {
+    width: min(551px, 100%);
+    justify-self: center;
+    aspect-ratio: 551 / 367;
+  }
+
+  .hero__copy .button {
+    min-height: 70px;
+  }
+}
+
+@media (max-width: 599px) {
+  .hero {
+    padding-block: 80px;
+  }
+
+  .hero__inner {
+    gap: 100px;
+  }
+
+  .hero__title {
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  .hero__image {
+    width: min(400px, 100%);
+    aspect-ratio: 286 / 191;
+  }
+
+  .hero__copy .button {
+    min-height: 70px;
+    padding-inline: 40px;
+  }
+}
